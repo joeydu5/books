@@ -3,7 +3,7 @@ import BookShow from "./BookShow";
 
 const BookList = ({ books, deleteBookById, bookEditHandler }) => {
   return (
-    <div>
+    <div className="book-list">
       {books.map((book) => {
         return (
           <div key={book.id}>
@@ -12,7 +12,6 @@ const BookList = ({ books, deleteBookById, bookEditHandler }) => {
               deleteBookById={deleteBookById}
               bookEditHandler={bookEditHandler}
             />
-            ;
           </div>
         );
       })}
