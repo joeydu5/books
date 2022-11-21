@@ -18,8 +18,7 @@ const BookShow = ({ book, deleteBookById, bookEditHandler }) => {
   return (
     <div className="book-show">
       <img
-        src="https://picsum.photos/300/200
-"
+        src={`https://picsum.photos/seed/${book.id}/300/200`}
         alt="book pictures"
       />
       {showEdit ? (
