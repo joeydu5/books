@@ -4,11 +4,11 @@ import BookList from "./components/BookList";
 import BooksContext from "./context/books";
 
 function App() {
-  const { fetchData } = useContext(BooksContext);
+  const { fetchData2 } = useContext(BooksContext);
 
   useEffect(() => {
-    fetchData();
-  }, []);
+    fetchData2();
+  }, [fetchData2]);
 
   return (
     <div className="app">
